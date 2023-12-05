@@ -1,0 +1,1 @@
+# ionic-graphql-rails-template
