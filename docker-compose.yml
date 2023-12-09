@@ -34,4 +34,3 @@ services:
     tty: true
 volumes:
   db-data:
-  node-modules-data:
