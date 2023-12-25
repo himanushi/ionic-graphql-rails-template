@@ -3,24 +3,23 @@
 require 'active_support/core_ext/integer/time'
 
 Rails.application.configure do
-  # Settings specified here will take precedence over those in config/application.rb.
+  # ここで指定された設定はconfig/application.rbの設定より優先されます。
 
-  # In the development environment your application's code is reloaded any time
-  # it changes. This slows down response time but is perfect for development
-  # since you don't have to restart the web server when you make code changes.
+  # 開発環境では、アプリケーションのコードが変更されるたびにリロードされます。
+  # これは応答時間を遅くしますが、コード変更時にウェブサーバーを再起動する必要がないため、開発には最適です。
   config.enable_reloading = true
 
-  # Do not eager load code on boot.
+  # 起動時にコードを事前読み込みしない。
   config.eager_load = false
 
-  # Show full error reports.
+  # 完全なエラーレポートを表示。
   config.consider_all_requests_local = true
 
-  # Enable server timing
+  # サーバータイミングを有効にする。
   config.server_timing = true
 
-  # Enable/disable caching. By default caching is disabled.
-  # Run rails dev:cache to toggle caching.
+  # キャッシングの有効/無効を設定。デフォルトではキャッシングは無効。
+  # rails dev:cacheを実行してキャッシングを切り替えます。
   if Rails.root.join('tmp/caching-dev.txt').exist?
     config.action_controller.perform_caching = true
     config.action_controller.enable_fragment_cache_logging = true
@@ -35,33 +34,33 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
-  # Store uploaded files on the local file system (see config/storage.yml for options).
+  # アップロードされたファイルをローカルファイルシステムに保存（オプションはconfig/storage.ymlを参照）。
   config.active_storage.service = :local
 
-  # Print deprecation notices to the Rails logger.
+  # 非推奨通知をRailsロガーに出力。
   config.active_support.deprecation = :log
 
-  # Raise exceptions for disallowed deprecations.
+  # 許可されていない非推奨に対して例外を発生。
   config.active_support.disallowed_deprecation = :raise
 
-  # Tell Active Support which deprecation messages to disallow.
+  # Active Supportにどの非推奨メッセージを禁止するか指示。
   config.active_support.disallowed_deprecation_warnings = []
 
-  # Raise an error on page load if there are pending migrations.
+  # 未実行のマイグレーションがある場合にページロード時にエラーを発生。
   config.active_record.migration_error = :page_load
 
-  # Highlight code that triggered database queries in logs.
+  # ログ内でデータベースクエリをトリガーしたコードをハイライト。
   config.active_record.verbose_query_logs = true
 
-  # Highlight code that enqueued background job in logs.
+  # バックグラウンドジョブをキューに入れたコードをログでハイライト。
   config.active_job.verbose_enqueue_logs = true
 
-  # Raises error for missing translations.
+  # 不足している翻訳に対してエラーを発生。
   # config.i18n.raise_on_missing_translations = true
 
-  # Annotate rendered view with file names.
+  # レンダリングされたビューにファイル名を注釈。
   # config.action_view.annotate_rendered_view_with_filenames = true
 
-  # Raise error when a before_action's only/except options reference missing actions
+  # before_actionのonly/exceptオプションが存在しないアクションを参照した場合にエラーを発生。
   config.action_controller.raise_on_missing_callback_actions = true
 end
