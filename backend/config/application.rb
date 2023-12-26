@@ -3,7 +3,7 @@
 require_relative 'boot'
 
 require 'rails'
-# Pick the frameworks you want:
+# 必要なフレームワークを選択してください:
 require 'active_model/railtie'
 # require 'active_job/railtie'
 require 'active_record/railtie'
@@ -16,24 +16,24 @@ require 'action_controller/railtie'
 # require "action_cable/engine"
 require 'rails/test_unit/railtie'
 
-# Require the gems listed in Gemfile, including any gems
-# you've limited to :test, :development, or :production.
+# Gemfileにリストされているジェムを必要に応じて要求します。これには、
+# :test、:development、または:productionに制限されたジェムも含まれます。
 Bundler.require(*Rails.groups)
 
 module Backend
   class Application < Rails::Application
-    # Initialize configuration defaults for originally generated Rails version.
+    # 元々生成されたRailsバージョンのデフォルト設定を初期化します。
     config.load_defaults 7.1
 
-    # Please, add to the `ignore` list any other `lib` subdirectories that do
-    # not contain `.rb` files, or that should not be reloaded or eager loaded.
-    # Common ones are `templates`, `generators`, or `middleware`, for example.
+    # `lib`サブディレクトリのうち、`.rb`ファイルを含まないものや、リロードやイーガーロードを
+    # 行うべきではないものを`ignore`リストに追加してください。
+    # 一般的なものには`templates`、`generators`、または`middleware`などがあります。
     config.autoload_lib(ignore: %w[assets tasks])
 
-    # Configuration for the application, engines, and railties goes here.
+    # アプリケーション、エンジン、およびレイルタイの設定はここに配置します。
     #
-    # These settings can be overridden in specific environments using the files
-    # in config/environments, which are processed later.
+    # これらの設定は、後で処理されるconfig/environments内のファイルを使用して、
+    # 特定の環境で上書きすることができます。
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")

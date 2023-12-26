@@ -1,8 +1,8 @@
 # frozen_string_literal: true
-# Be sure to restart your server when you modify this file.
+# このファイルを変更した際には、サーバーを再起動してください。
 
-# Define an application-wide HTTP permissions policy. For further
-# information see: https://developers.google.com/web/updates/2018/06/feature-policy
+# アプリケーション全体のHTTPパーミッションポリシーを定義します。詳細については、
+# 以下のURLを参照してください：https://developers.google.com/web/updates/2018/06/feature-policy
 
 # Rails.application.config.permissions_policy do |policy|
 #   policy.camera      :none
