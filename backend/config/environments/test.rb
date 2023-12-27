@@ -35,7 +35,7 @@ Rails.application.configure do
   config.action_controller.allow_forgery_protection = false
 
   # アップロードされたファイルを一時ディレクトリのローカルファイルシステムに保存します。
-  config.active_storage.service = :test
+  # config.active_storage.service = :test
 
   # 非推奨通知を標準エラー出力に出力します。
   config.active_support.deprecation = :stderr

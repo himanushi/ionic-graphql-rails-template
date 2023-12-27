@@ -35,7 +35,7 @@ Rails.application.configure do
   end
 
   # アップロードされたファイルをローカルファイルシステムに保存（オプションはconfig/storage.ymlを参照）。
-  config.active_storage.service = :local
+  # config.active_storage.service = :local
 
   # 非推奨通知をRailsロガーに出力。
   config.active_support.deprecation = :log
@@ -53,7 +53,7 @@ Rails.application.configure do
   config.active_record.verbose_query_logs = true
 
   # バックグラウンドジョブをキューに入れたコードをログでハイライト。
-  config.active_job.verbose_enqueue_logs = true
+  # config.active_job.verbose_enqueue_logs = true
 
   # 不足している翻訳に対してエラーを発生。
   # config.i18n.raise_on_missing_translations = true

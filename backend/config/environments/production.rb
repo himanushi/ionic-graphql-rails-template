@@ -33,7 +33,7 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = "X-Accel-Redirect" # NGINX用
 
   # アップロードされたファイルをローカルファイルシステムに保存します（オプションはconfig/storage.ymlを参照）。
-  config.active_storage.service = :local
+  # config.active_storage.service = :local
 
   # アプリへのすべてのアクセスがSSL終端リバースプロキシを通じて行われていると想定します。
   # config.force_sslと組み合わせてStrict-Transport-Securityとセキュアクッキーを使用することができます。
