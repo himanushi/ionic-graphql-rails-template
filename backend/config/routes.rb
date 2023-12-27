@@ -1,12 +1,12 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # https://guides.rubyonrails.org/routing.html のDSLに従って、アプリケーションのルートを定義してください。
 
-  # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
-  # Can be used by load balancers and uptime monitors to verify that the app is live.
+  # 例外なしでアプリが起動した場合に200を返す、/upでヘルスステータスを表示します。
+  # ロードバランサーやアップタイムモニターがアプリが動作していることを確認するために使用できます。
   get 'up' => 'rails/health#show', as: :rails_health_check
 
-  # Defines the root path route ("/")
+  # ルートパスルート（"/"）を定義します。
   # root "posts#index"
 end
